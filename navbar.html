@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+         header {
+      color: #0f0909;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 1.8rem;
+      position: relative; /* explicitly relative to highlight default */
+      z-index: -10;
+      }
+      .navbar {
+      background: var(--clr-primary-dark);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 0.75rem 1rem;
+      position: sticky;
+      top: 0; /* sticks when reaching viewport top */
+      z-index: 999;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+</head>
+<body>
+    <header>Rawan website</header>
+    <div>
+    <nav class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+    </div>
+    
+</body>
+</html>
