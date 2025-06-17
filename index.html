@@ -2,31 +2,56 @@
 <html lang="en">
 <head>
     <style>
-         header {
+
+    header {
       color: #0f0909;
       padding: 1.5rem;
       text-align: center;
       font-size: 1.8rem;
-      position: relative; /* explicitly relative to highlight default */
-      z-index: -10;
+      position: relative; 
+      z-index: 10;
+      }
+      main{
+        display: flex;
+        gap: 20px;
+        margin-top: 10px;
       }
       .navbar {
-      background: var(--clr-primary-dark);
+      background:rgb(138, 138, 214);
       display: flex;
       justify-content: center;
       gap: 2rem;
       padding: 0.75rem 1rem;
       position: sticky;
-      top: 0; /* sticks when reaching viewport top */
-      z-index: 999;
+      top: 0; 
+      z-index: 11;
     }
     .navbar a {
-      color: #fff;
+      color: #000000;
       text-decoration: none;
       font-weight: 600;
     }
     .navbar a:hover {
       text-decoration: underline;
+    }
+    .sidebar {
+      flex: 0 0 250px;
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 1rem;
+      position: relative; 
+      width: 200px;
+    }
+    .sidebar h3 {
+      margin-bottom: 1rem;
+      color: var(--clr-primary-dark);
+    }
+    .sidebar ul {
+      list-style: none;
+    }
+    .sidebar li + li {
+      margin-top: 0.5rem;
     }
     </style>
     <meta charset="UTF-8">
@@ -43,6 +68,20 @@
     <a href="#contact">Contact</a>
   </nav>
     </div>
-    
+<main>
+    <aside class="sidebar">
+        
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+        <li><a href="#section4">Section 4</a></li>
+      </ul>
+    </aside>
+    <div>
+        <p>hello everybody this is my content</p>
+    </div>
+    </main>
 </body>
 </html>
